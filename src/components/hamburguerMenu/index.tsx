@@ -1,25 +1,46 @@
 import Link from "next/link";
+import styles from './styles.module.scss';
+import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
+import { useNavContext } from "@/contexts/navContext";
 
 const HamburguerMenu = () => {
-    return (
-        <div className="backdrop">
-            <button>X</button>
 
-            <nav>
+    const { setActivateMenu }: any = useNavContext();
+    return (
+        <main className={styles.backdrop}>                
+            <nav className={styles.container}>
+                <CloseRoundedIcon
+                    fontSize={'large'}
+                    cursor={'pointer'}
+                    onClick={ () => setActivateMenu(false)}
+                />
                 <Link href={'#home'}
-                >HOME
+                onClick={ () => setActivateMenu(false)}
+                >
+                    HOME
                 </Link>
-                <Link href={'#sobre'}
-                >SOBRE
+                <Link href={'#quemsomos'}
+                    onClick={ () => setActivateMenu(false)}
+                >
+                    QUEM SOMOS
                 </Link>
                 <Link href={'#servicos'}
-                >SERVIÇOS
+                    onClick={ () => setActivateMenu(false)}
+                >
+                    SERVIÇOS
+                </Link>
+                <Link href={'#clientes'}
+                    onClick={ () => setActivateMenu(false)}
+                >
+                    CLIENTES
                 </Link>
                 <Link href={'#contato'}
-                >CONTATO
+                    onClick={ () => setActivateMenu(false)}
+                >
+                    CONTATO
                 </Link>
-            </nav>
-        </div>
+            </nav>            
+        </main>
     )
 };
 

@@ -8,8 +8,15 @@ $grey-2: #c2c2c2;
 $grey-3: #959595;
 $grey-4: #686868;
 $grey-5: #414141;
-$color-transparent: #1d233199;
+$color-transparent: #000000d0;
 
+@mixin text-menu-mobile() {
+	font-size: 1.5rem;	
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	text-transform: none;
+};
 
 @mixin text-style-font-0() {
 	font-size: 0.625rem;

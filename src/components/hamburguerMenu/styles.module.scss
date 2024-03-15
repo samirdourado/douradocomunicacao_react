@@ -1,0 +1,103 @@
+@use 'abstracts' as *;
+
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    background-color: $color-transparent;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.container {
+    @media (max-width: 750px) {
+        width: 100vw;
+        max-width: 450px;
+        height: 100vh;        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+        margin-top: 20px;
+        padding: 10px;        
+        animation: menuMobileAnimation 1s linear 0s 1 normal none;
+    };
+
+    @media (min-width: 751px) {
+        display: none;
+    };
+};
+
+
+.container > svg {
+    color: $color-a;
+    font-weight: bold;
+}
+
+.container > a {
+    color: $color-a;
+    @include text-menu-mobile;
+	border-bottom: thick double transparent;
+	padding-bottom: 2px;
+	
+}
+
+.container > a:hover {
+    border-bottom: thick double $color-a;
+}
+
+.container > a:active {
+    border-bottom: thick double $color-a;
+}
+
+.container > a:focus {
+    border-bottom: thick double $color-a;
+}
+
+@keyframes menuMobileAnimation {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
