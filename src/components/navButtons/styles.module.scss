@@ -1,0 +1,17 @@
+@use 'abstracts' as *;
+
+.menu {
+    display: none;
+
+    @media  (min-width: 768px) {
+        display: flex;        
+    }
+}
+
+.menu__btn__open {
+    color: $color-a;
+    
+    @media  (min-width: 768px) {
+        display: none;
+    }
+}

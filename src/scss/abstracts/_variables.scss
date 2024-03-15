@@ -1,0 +1,21 @@
+$color-a: #ffcc33;
+$color-b: #daa520;
+$color-c: #ffe699;
+$black: #000000;
+$white: #ffffff;
+$grey-1: #ebebeb;
+$grey-2: #c2c2c2;
+$grey-3: #959595;
+$grey-4: #686868;
+$grey-5: #414141;
+$color-transparent: #1d233199;
+
+
+@mixin text-style-font-0() {
+	font-size: 0.625rem;
+	font-family: "Inter";
+	font-weight: 300;
+	font-style: normal;
+	text-decoration: none;
+	text-transform: none;
+};
