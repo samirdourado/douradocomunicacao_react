@@ -1,0 +1,16 @@
+@use 'abstracts' as *;
+
+.container {
+    width: 100%;
+    min-height: 0.625rem;
+    height: 0.625rem;
+    background-color: $color-a;
+}
+
+.progress {
+    width: 30%;    
+    height: 100%;
+    background-color: $color-c;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}

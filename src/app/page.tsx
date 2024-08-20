@@ -1,9 +1,8 @@
 'use client'
-import Image from "next/image";
-import styles from "./page.module.css";
 import Header from "@/components/header";
 import { useNavContext } from "@/contexts/navContext";
 import HamburguerMenu from "@/components/hamburguerMenu";
+import PageSize from "@/components/sizePage";
 
 export default function Home() {
 
@@ -11,6 +10,7 @@ export default function Home() {
 
   return (
     <main>
+      <PageSize/>      
       <Header/>
       { activateMenu && <HamburguerMenu/>}
     </main>
