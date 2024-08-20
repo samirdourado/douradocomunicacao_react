@@ -1,0 +1,10 @@
+@use 'abstracts' as *;
+
+.container {    
+    position: relative;
+    height: 100vh;
+}
+
+.heroImg {    
+    object-fit: cover;
+}

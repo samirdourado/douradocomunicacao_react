@@ -3,6 +3,7 @@ import Header from "@/components/header";
 import { useNavContext } from "@/contexts/navContext";
 import HamburguerMenu from "@/components/hamburguerMenu";
 import PageSize from "@/components/sizePage";
+import Hero from "@/components/hero";
 
 export default function Home() {
 
@@ -10,7 +11,8 @@ export default function Home() {
 
   return (
     <main>
-      <PageSize/>      
+      <PageSize/>
+      <Hero/>
       <Header/>
       { activateMenu && <HamburguerMenu/>}
     </main>

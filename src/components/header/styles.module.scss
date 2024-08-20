@@ -2,8 +2,13 @@
 
 .container {
     margin: 0 auto;
+    margin-top: 20px;
     padding: 0 0.625rem;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    top: 0;
+    // left: 0;
 }
