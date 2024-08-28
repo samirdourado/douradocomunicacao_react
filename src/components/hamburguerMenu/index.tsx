@@ -7,7 +7,7 @@ const HamburguerMenu = () => {
 
     const { setActivateMenu }: any = useNavContext();
     return (
-        <main className={styles.backdrop}>                
+        <main className={styles.backdrop} onClick={ () => setActivateMenu(false)}>                
             <nav className={styles.container}>
                 <CloseRoundedIcon
                     fontSize={'large'}
