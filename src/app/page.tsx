@@ -5,6 +5,7 @@ import HamburguerMenu from "@/components/hamburguerMenu";
 import PageSize from "@/components/sizePage";
 import Hero from "@/components/hero";
 import Slogan from "@/components/slogan";
+import AboutUs from "@/components/about";
 
 export default function Home() {
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero/>
       <Header/>
       <Slogan/>
+      <AboutUs/>
 
       { activateMenu && <HamburguerMenu/>}
     </main>
