@@ -4,6 +4,7 @@ import { useNavContext } from "@/contexts/navContext";
 import HamburguerMenu from "@/components/hamburguerMenu";
 import PageSize from "@/components/sizePage";
 import Hero from "@/components/hero";
+import Slogan from "@/components/slogan";
 
 export default function Home() {
 
@@ -14,6 +15,8 @@ export default function Home() {
       <PageSize/>
       <Hero/>
       <Header/>
+      <Slogan/>
+
       { activateMenu && <HamburguerMenu/>}
     </main>
   );
