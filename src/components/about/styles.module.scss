@@ -3,13 +3,16 @@
 .container {
     min-width: 320px;
     display: flex;
+    background-color: bisque;
+    width: 100%;
 
 
-    @media  (max-width: 768px) {
+    @media  (max-width: 885px) {
         flex-direction: column;
+        width: 100%;
     }
     
-    @media  (min-width: 769px) {
+    @media  (min-width: 884px) {
         flex-direction: row;
     }
 
@@ -18,26 +21,45 @@
 .container > article {
     padding: 1.875rem 0.9375rem;
     display: flex;
+
     flex-direction: column;
-    gap: 1.875rem;
+    gap: 1.875rem;    
+    width: 50%;
+    
+    @media  (max-width: 884px) {
+        width: 100%;
+    }
+}
+
+.container > article {    
+    @media  (min-width: 885px) {
+        h2 {
+            margin-left: 80px;
+        }
+        
+        p {
+            margin-left: 80px;
+            width: 60%;            
+        }
+    }
+}
+
+.aboutImg__container {    
+    width: 50%;
+    height: 300px;
+    max-height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    @media  (max-width: 885px) {
+        width: 100%;
+    }
 }
 
 .aboutImg {
-    object-fit: cover;    
     width: 100%;
     height: 100%;
-
-    @media  (max-width: 768px) {
-        min-width: 320px;
-        min-height: 186px;
-        max-width: 721px;
-        max-height: 420px;        
-    }
-    
-    @media  (min-width: 769px) {
-        min-width: 721px;
-        min-height: 420px;
-        max-width: 721px;
-        max-height: 420px; 
-    }
+    object-fit: cover;
 }

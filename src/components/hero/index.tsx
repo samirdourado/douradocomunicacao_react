@@ -15,7 +15,6 @@ const Hero = () => {
             />
         </figure>
     )
-
 };
 
 export default Hero;
