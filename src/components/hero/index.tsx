@@ -8,9 +8,8 @@ const Hero = () => {
             <Image
                 src="/hero.jpg"
                 alt="Imagem de fundo"
-                // width={1000}
-                // height={700}
-                fill={true}
+                width={1000}
+                height={700}                
                 className={styles.heroImg}
             />
         </figure>

@@ -5,6 +5,9 @@
     min-height: 0.625rem;
     height: 0.625rem;
     background-color: $color-a;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .progress {

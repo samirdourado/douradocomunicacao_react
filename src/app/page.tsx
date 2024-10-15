@@ -14,8 +14,8 @@ export default function Home() {
   return (
     <main>
       <PageSize/>
-      <Hero/>
       <Header/>
+      <Hero/>
       <Slogan/>
       <AboutUs/>
       
