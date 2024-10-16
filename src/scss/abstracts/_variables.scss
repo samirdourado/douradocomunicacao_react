@@ -26,3 +26,42 @@ $color-transparent: #000000d0;
 	text-decoration: none;
 	text-transform: none;
 };
+
+@mixin title-style-card-mobile() {
+	font-size: 1.25rem;
+	font-family: "Inter";
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	text-transform: none;
+};
+
+@mixin text-style-card-mobile() {
+	font-size: 0.875rem;
+	font-family: "Inter";
+	font-weight: 500;
+	font-style: normal;
+	text-decoration: none;
+	text-transform: none;
+	text-align: center;
+};
+
+@mixin title-style-card() {
+	font-size: 1.5rem;
+	font-family: "Inter";
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	text-transform: none;
+};
+
+@mixin text-style-card() {
+	font-size: 14px;
+	font-family: "Inter";
+	font-weight: 500;
+	font-style: normal;
+	text-decoration: none;
+	text-transform: none;
+	text-align: center;
+	line-height: 20px;
+};
