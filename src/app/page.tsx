@@ -6,6 +6,7 @@ import PageSize from "@/components/sizePage";
 import Hero from "@/components/hero";
 import Slogan from "@/components/slogan";
 import AboutUs from "@/components/about";
+import ServicesArea from "@/components/servicesArea";
 
 export default function Home() {
 
@@ -18,8 +19,7 @@ export default function Home() {
       <Hero/>
       <Slogan/>
       <AboutUs/>
-      
-
+      <ServicesArea/>
       { activateMenu && <HamburguerMenu/>}
     </main>
   );
