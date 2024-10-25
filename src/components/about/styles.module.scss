@@ -44,6 +44,13 @@
     }
 }
 
+.container > article > h2 {
+    color: $grey-4;
+    @include title-main
+}
+
+
+
 .aboutImg__container {    
     width: 50%;
     height: 300px;

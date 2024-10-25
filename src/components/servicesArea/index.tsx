@@ -5,12 +5,13 @@ import RssFeedIcon from '@mui/icons-material/RssFeed';
 import SignpostIcon from '@mui/icons-material/Signpost';
 import BackupTableIcon from '@mui/icons-material/BackupTable';
 import PrintIcon from '@mui/icons-material/Print';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const ServicesArea = () => {
 
     return (
         <main className={styles.container}>
-            <h2 id="servicos">Serviços</h2>
+            <h2 id="servicos">SERVIÇOS</h2>
             <ul>
                 <li>
                     <LanguageIcon/>
@@ -85,7 +86,7 @@ const ServicesArea = () => {
                     </p>
                 </li>
             </ul>
-            <button>Entrar em contato</button>
+            <button><WhatsAppIcon/> Entrar em contato</button>
         </main>
     )
 
